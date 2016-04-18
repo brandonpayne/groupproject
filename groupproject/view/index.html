@@ -3,13 +3,6 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <?php
-    require('model/database.php');
-$query = 'SELECT *
-          FROM mail
-          ORDER BY name';
-$name = $db->query($query);
-    ?>
     <head>
         <meta charset="utf-8">
         <title>Flex - Free Responsive Theme</title>
@@ -21,13 +14,13 @@ http://www.templatemo.com/tm-406-flex
 -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         
-        <link rel="stylesheet" href="view/css/bootstrap.min.css">
-        <link rel="stylesheet" href="view/css/font-awesome.css">
-        <link rel="stylesheet" href="view/css/animate.css">
-        <link rel="stylesheet" href="view/css/templatemo_misc.css">
-        <link rel="stylesheet" href="view/css/templatemo_style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
 
-        <script src="view/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -429,7 +422,7 @@ http://www.templatemo.com/tm-406-flex
                     </div> <!-- /.col-md-7 -->
                     <div class="col-md-5 col-sm-6">
                         <div class="contact-form">
-                            <form action="model/addcontact.php" method="post" name="contactform" id="contactform">
+                            <form method="post" name="contactform" id="contactform">
                                 <p>
                                     <input name="name" type="text" id="name" placeholder="Your Name">
                                 </p>
@@ -440,7 +433,7 @@ http://www.templatemo.com/tm-406-flex
                                     <input name="subject" type="text" id="subject" placeholder="Subject"> 
                                 </p>
                                 <p>
-                                    <textarea name="message" id="comments" placeholder="Message"></textarea>    
+                                    <textarea name="comments" id="comments" placeholder="Message"></textarea>    
                                 </p>
                                 <input type="submit" class="mainBtn" id="submit" value="Send Message">
                             </form>
