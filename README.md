@@ -14,3 +14,6 @@ Steps:
 Need to add the rest of the shoes to the database.
 Create tables for each brand
 Proceed to next page (Nike)
+
+Update:
+Shopping cart working? Weird
