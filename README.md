@@ -7,6 +7,7 @@ Replaced tblproduct table with adidas table.  (Might be source of errors)
 
 Errors:
 Items selected do not go to the shopping cart.
+Shopping cart original code working with Ultra Boost Products.  (Possible fix)
 Need to fix style of items on page. (Center them, etc.)
 
 Steps:
